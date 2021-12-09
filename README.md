@@ -20,7 +20,6 @@ Front Camera | 8 MP 1.12µm, HDR
 ![Motorola g7](https://fdn2.gsmarena.com/vv/pics/motorola/motorola-moto-g7-1.jpg "Motorola g7")
 
 ### Kernel Source
-To Be Released
 
 See /prebuilt/README.md
 
@@ -28,10 +27,8 @@ See /prebuilt/README.md
 
 ```sh
 . build/envsetup.sh
-export ALLOW_MISSING_DEPENDENCIES=true
-export LC_ALL=C
-lunch omni_river-eng
-mka adbd recoveryimage
+lunch twrp_river-eng
+mka adbd bootimage
 ```
 
 ### Build with TWRP installer

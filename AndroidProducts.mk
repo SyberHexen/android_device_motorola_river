@@ -15,4 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/omni_river.mk
+    $(LOCAL_DIR)/twrp_river.mk
+
+COMMON_LUNCH_CHOICES := \
+    twrp_river-user \
+    twrp_river-userdebug \
+    twrp_river-eng
