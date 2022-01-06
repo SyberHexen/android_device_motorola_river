@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_river.mk
+    $(LOCAL_DIR)/aosp_river.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_river-eng \
-    lineage_river-user \
-    lineage_river-userdebug
+    aosp_river-eng \
+    aosp_river-user \
+    aosp_river-userdebug
