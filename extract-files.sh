@@ -44,7 +44,8 @@ function blob_fixup() {
             "${PATCHELF}" --set-soname libtinyalsa-moto.so "${2}"
             ;;
         # rename moto modified tinyalsa
-        vendor/lib/soundfx/libmmieffectswrapper.so)
+        vendor/lib/hw/audio.motvr.default.so | vendor/lib/hw/sound_trigger.primary.default.so | vendor/lib/soundfx/libmmieffectswrapper.so | \
+        vendor/lib/libadspd.so | vendor/lib64/libadspd.so | vendor/lib/motorola.hardware.audio.adspd@1.0-impl.so | vendor/lib64/motorola.hardware.audio.adspd@1.0-impl.so)
             [ "$2" = "" ] && return 0
             "${PATCHELF}" --replace-needed libtinyalsa.so libtinyalsa-moto.so "${2}"
             ;;
